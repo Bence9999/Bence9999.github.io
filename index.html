@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect-four</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="home">
+      <div class="title">
+        <h1>Connect-four</h1>
+      </div>
+
+      <form class="players" action="">
+        <div class="player player1">
+          <label for="player1">Add meg az első játékos nevét!</label>
+          <input
+            type="text"
+            name="player1"
+            placeholder="1. játékos"
+            maxlength="50"
+            id="player1"
+          />
+        </div>
+        <div class="player player2">
+          <label for="player2">Add meg az második játékos nevét!</label>
+          <input
+            type="text"
+            name="player2"
+            placeholder="2. játékos"
+            maxlength="50"
+            id="player2"
+          />
+        </div>
+        <div class="set-timer">
+          <label for="timer-checkbox">Szeretnél időkorlátot?</label>
+          <input type="checkbox" name="timer" id="timer-checkbox" />
+          <input type="text" name="time" id="set-time" value="" maxlength="4" />
+          <label for="set-time">mp</label>
+        </div>
+        <button type="button" class="start-button">Start</button>
+      </form>
+      <div class="rules">
+        <p>
+          A Connect four kétszemélyes absztrakt stratégiai táblás játék, az
+          amőba egyik változata. A győzelemhez 4 színünket kell egy vonalba
+          lerakni. A játék egy 7x6-os függőleges kék táblán játszódik, melynek a
+          tetejéből kell bedobálni mindkét játékosnak a saját színét. A
+          játékosok felülről csúsztatják bele a táblába a saját színeiket
+          –melyek általában piros és sárga korongok-, így a jelrakások
+          lehetőségei is korlátozottak a többi amőba típusú játékhoz képest. Az
+          a játékos nyer, amelyik függőlegesen, vízszintesen, vagy átlósan
+          kirakott négyet a saját színéből.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="win-screen">
+        <p class="win-message"></p>
+        <button type="button" class="win-screen-button restart-button">
+          Új játék
+        </button>
+        <button type="button" class="win-screen-button home-button">
+          Kezdőlap
+        </button>
+      </div>
+      <div class="player1-turn">
+        <div><p class="player1-timer"></p></div>
+        <p class="player1-name">player1</p>
+      </div>
+      <div class="player2-turn">
+        <div><p class="player2-timer"></p></div>
+        <p class="player2-name">player2</p>
+      </div>
+
+      <div class="game-board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+  </body>
+</html>
