@@ -10,7 +10,8 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: #e0e0e6; 
+  background: #e0e0e6;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home {

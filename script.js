@@ -380,8 +380,6 @@ const newMove = function (e) {
         disableNewMove();
         winMessage.textContent = `${player2.value} nyert!`;
         winScreen.style.display = "flex";
-        // timer1 = function () {};
-        // timer2 = function () {};
         clearInterval(timer1);
         clearInterval(timer2);
       }, 1);
